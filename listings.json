@@ -1,0 +1,16 @@
+[
+  {
+    "listing": "/slides/index.html",
+    "items": [
+      "/slides/demo/index.html",
+      "/slides/sample/index.html"
+    ]
+  },
+  {
+    "listing": "/reports/index.html",
+    "items": [
+      "/reports/demo/index.html",
+      "/reports/sample/index.html"
+    ]
+  }
+]
