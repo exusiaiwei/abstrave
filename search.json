@@ -4,7 +4,7 @@
     "href": "index.html#abstrave",
     "title": "",
     "section": "Abstrave",
-    "text": "Abstrave\n\nA quarto website template\n\nReport\nPresentation\nReport Demo\nPresentation Demo\n\n\n\nUpdated: 21-05-2023 at 17:56:04."
+    "text": "Abstrave\n\nA quarto website template\n\nReport\nPresentation\nReport Demo\nPresentation Demo\n\n\n\nUpdated: 21-05-2023 at 18:21:21."
   },
   {
     "objectID": "slides/sample/index.html#heading-1",
@@ -25,7 +25,7 @@
     "href": "slides/sample/index.html#section",
     "title": "Presentation",
     "section": "",
-    "text": "Thank you! Questions?\n\n\n         _                  \nplatform x86_64-pc-linux-gnu\nos       linux-gnu          \nmajor    4                  \nminor    3.0                \n\n\n2023 • Abstrave"
+    "text": "Thank you! Questions?\n2023 • Abstrave"
   },
   {
     "objectID": "slides/index.html",
@@ -319,7 +319,7 @@
     "href": "slides/demo/index.html#general-tips",
     "title": "Demo Slides",
     "section": "General tips",
-    "text": "General tips\n\nReplace assets/cover.jpg to change cover slide picture\nReplace assets/end.jpg to change end slide picture\nAdd custom css under YAML css: \"styles.css\"\nIf content overflows the slide in vertical direction, add class .scrollable\n\n\n\n\n                                      sysname \n                                      \"Linux\" \n                                      release \n                          \"5.15.0-1037-azure\" \n                                      version \n\"#44-Ubuntu SMP Thu Apr 20 13:19:31 UTC 2023\" \n                                     nodename \n                               \"fv-az749-836\" \n                                      machine \n                                     \"x86_64\" \n                                        login \n                                    \"unknown\" \n                                         user \n                                     \"runner\" \n                               effective_user \n                                     \"runner\" \n\n\n\n\nExport HTML to PDF using PDF export mode by pressing e\nFor complete Quarto revealjs documentation, click here"
+    "text": "General tips\n\nReplace assets/cover.jpg to change cover slide picture\nReplace assets/end.jpg to change end slide picture\nAdd custom css under YAML css: \"styles.css\"\nIf content overflows the slide in vertical direction, add class .scrollable\n\n\n\n\n                                      sysname \n                                      \"Linux\" \n                                      release \n                          \"5.15.0-1037-azure\" \n                                      version \n\"#44-Ubuntu SMP Thu Apr 20 13:19:31 UTC 2023\" \n                                     nodename \n                               \"fv-az255-268\" \n                                      machine \n                                     \"x86_64\" \n                                        login \n                                    \"unknown\" \n                                         user \n                                     \"runner\" \n                               effective_user \n                                     \"runner\" \n\n\n\n\nExport HTML to PDF using PDF export mode by pressing e\nFor complete Quarto revealjs documentation, click here"
   },
   {
     "objectID": "slides/demo/index.html#section",
