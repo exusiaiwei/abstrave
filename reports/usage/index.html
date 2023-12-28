@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="John Doe">
-<meta name="description" content="This is a description">
+<meta name="author" content="Roy Francis">
+<meta name="description" content="Practical guide to using Quarto with Abstrave theme">
 
-<title>Report</title>
+<title>Using Quarto &amp; Abstrave</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -42,6 +76,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,6 +109,9 @@ background-size: cover;
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&amp;family=Nunito:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet">
+
+<link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 
 
 </head>
@@ -130,11 +169,11 @@ background-size: cover;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Report</h1>
-            <p class="subtitle lead">This is a subtitle</p>
+      <h1 class="title">Using Quarto &amp; Abstrave</h1>
+            <p class="subtitle lead">Abstrave quarto theme</p>
                   <div>
         <div class="description">
-          This is a description
+          Practical guide to using Quarto with Abstrave theme
         </div>
       </div>
                 </div>
@@ -146,7 +185,7 @@ background-size: cover;
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>John Doe </p>
+               <p>Roy Francis </p>
             </div>
     </div>
       
@@ -169,8 +208,12 @@ background-size: cover;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#heading-1" id="toc-heading-1" class="nav-link active" data-scroll-target="#heading-1"><span class="header-section-number">1</span> Heading 1</a></li>
-  <li><a href="#heading-2" id="toc-heading-2" class="nav-link" data-scroll-target="#heading-2"><span class="header-section-number">2</span> Heading 2</a></li>
+  <li><a href="#initialize" id="toc-initialize" class="nav-link active" data-scroll-target="#initialize"><span class="header-section-number">1</span> Initialize</a></li>
+  <li><a href="#settings" id="toc-settings" class="nav-link" data-scroll-target="#settings"><span class="header-section-number">2</span> Settings</a></li>
+  <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content"><span class="header-section-number">3</span> Content</a></li>
+  <li><a href="#usage-tips-and-conventions" id="toc-usage-tips-and-conventions" class="nav-link" data-scroll-target="#usage-tips-and-conventions"><span class="header-section-number">4</span> Usage tips and conventions</a></li>
+  <li><a href="#preview" id="toc-preview" class="nav-link" data-scroll-target="#preview"><span class="header-section-number">5</span> Preview</a></li>
+  <li><a href="#export" id="toc-export" class="nav-link" data-scroll-target="#export"><span class="header-section-number">6</span> Export</a></li>
   </ul>
 </nav>
     </div>
@@ -181,13 +224,121 @@ background-size: cover;
 
 
 
-<section id="heading-1" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="heading-1"><span class="header-section-number">1</span> Heading 1</h2>
-<p>Content</p>
+<p>The Abstrave template is a Quarto website project with html reports and revealjs presentation.</p>
+<section id="initialize" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="initialize"><span class="header-section-number">1</span> Initialize</h2>
+<p>To download a starter template, run in the terminal:</p>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>bash</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> use template royfrancis/abstrave</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p>This creates a website template that you can modify as needed. The directory structure is as follows:</p>
+<pre><code>.
+├── 404.md
+├── assets/
+├── _extensions/
+├── home_contents.qmd
+├── home_precourse.qmd
+├── home_schedule.qmd
+├── home_syllabus.qmd
+├── index.qmd
+├── _quarto.yml
+├── reports/
+└── slides/</code></pre>
 </section>
-<section id="heading-2" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="heading-2"><span class="header-section-number">2</span> Heading 2</h2>
-<p>More Contents</p>
+<section id="settings" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="settings"><span class="header-section-number">2</span> Settings</h2>
+<p>Start by updating the settings. The website/project settings are contained in the <code>_quarto.yml</code> file. A website is a quarto project. Projects are documented [here]{https://quarto.org/docs/projects/quarto-projects.html} and websites are documented <a href="https://quarto.org/docs/websites/">here</a>.</p>
+<ul>
+<li>The output directory is set to <strong>docs</strong>; <code>output-dir: docs</code></li>
+<li>Navigation bar links are set under <strong>website: navbar</strong>. Add or remove as needed</li>
+<li>Page footer settings are set under <strong>website: page-footer</strong>. Update as needed</li>
+<li>Change <code>site-url</code> to your intended destination</li>
+<li>HTML report settings are under <strong>format: html:</strong>
+<ul>
+<li>warnings and messages from chunks are disabled</li>
+<li>A default subtitle has been set</li>
+</ul></li>
+<li>RevealJS slides settings are under <strong>format: revealjs</strong></li>
+<li>Add custom css under YAML if needed: <code>css: "styles.css"</code></li>
+</ul>
+</section>
+<section id="content" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="content"><span class="header-section-number">3</span> Content</h2>
+<p>Now you can start adding content.</p>
+<p><i class="fa-solid fa-circle-info" aria-label="circle-info"></i> The starter template should render completely using quarto alone. You can add R or Python for example as needed.</p>
+<ul>
+<li>The homepage is <strong>index.qmd</strong></li>
+<li>Files starting with <strong>home</strong> are essential pages linked in the top navigation menu. Remove or modify them as needed</li>
+<li>All reports are organised under <strong>reports/</strong> as separate folders</li>
+<li>All slides are organised under <strong>slides/</strong> as separate folders</li>
+<li>To create additional Quarto documents in RStudio, <strong>File</strong> &gt; <strong>New File</strong> &gt; <strong>Quarto Document</strong></li>
+</ul>
+</section>
+<section id="usage-tips-and-conventions" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="usage-tips-and-conventions"><span class="header-section-number">4</span> Usage tips and conventions</h2>
+<ul>
+<li>Markdown basics are covered <a href="https://quarto.org/docs/authoring/markdown-basics.html">here</a></li>
+<li>Use level 2 heading (<code>##</code>) as the highest level</li>
+<li>Use quarto style chunk options; <code>#| eval: false</code> rather than <code>`{r eval=FALSE}`</code></li>
+<li>Qmds starting with <code>_</code> such as <code>_content.qmd</code> are child documents and are not rendered alone</li>
+<li>Child qmd files can be included by using <code>{{&lt; include _content.qmd &gt;&gt;}}</code>. They do not work in .ipynb notebooks. Includes is documented <a href="https://quarto.org/docs/authoring/includes.html">here</a>.</li>
+<li>Dynamic variables can be defined in <code>_variables.yml</code> and used as <code>{{&lt; var variable_name &gt;&gt;}}</code>. Dynamic variables are documented <a href="https://quarto.org/docs/authoring/variables.html">here</a>.</li>
+<li>Dynamic variables can be defined in <code>_metadata.yml</code> and used as <code>{{&lt; meta variable_name &gt;&gt;}}</code></li>
+<li>Environment variables can be used as <code>{{&lt; env variable_name &gt;&gt;}}</code></li>
+<li>When using R or Python, declare all libraries at the beginning of each document</li>
+</ul>
+</section>
+<section id="preview" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="preview"><span class="header-section-number">5</span> Preview</h2>
+<p>Quarto allows for live preview of changes.</p>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>bash</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview report.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Preview will build all the files in the project. So, this might not be a good option if there are incomplete documents.</p>
+</div>
+</div>
+</section>
+<section id="export" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="export"><span class="header-section-number">6</span> Export</h2>
+<p>A quarto document can be rendered from the terminal as follows:</p>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>bash</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render report.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p>Rendering from the R console using the <code>quarto</code> R package.</p>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>R</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_render</span>(<span class="st">"report.qmd"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p>To render from RStudio, click the <strong>Render</strong> button. Rendered output is moved into the <strong>docs</strong> directory. This is set in <code>_quarto.yml</code> as <code>output-dir:</code></p>
 
 
 </section>
