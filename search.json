@@ -95,7 +95,7 @@
     "href": "reports/demo/index.html#images",
     "title": "Quarto Basics",
     "section": "4 Images",
-    "text": "4 Images\nImages can be inserted using plain markdown or HTML directly. Plain markdown can be embellished with custom quarto adjustments to modify aspects of the image. Clicking the image opens the image in a lightbox. This is made possible using the [lightbox][https://github.com/quarto-ext/lightbox] extension.\n\n4.1 Using Markdown\nUsing regular markdown.\n![](assets/image.jpg)\n\n\n\n\n\nThe dimensions are based on image and/or fill up the entire available space. You can control the dimension as shown below.\n![This is a caption](assets/image.jpg){width=30%}  \n\n\n\nThis is a caption\n\n\nThis image above is now 30% of it’s original width.\n\n4.1.1 Figure layout\n::: {#fig-mylabel layout-ncol=2}\n![Caption for figure 1](assets/image.jpg){width=\"40%\"}\n\n![Caption for figure 2](assets/image.jpg){width=\"40%\"}\n\nThese figures are interesting.\n:::\n\n\n\n\n\n\nCaption for figure 1\n\n\n\n\n\nCaption for figure 2\n\n\n\nFigure 1: These figures are interesting.\n\n\nMore figure options and layouts are described here. Cross referencing described here.\n\n\n\n4.2 Using HTML\nThis image below is 30% size.\n&lt;img src=\"assets/image.jpg\" style=\"width:30%;\"/&gt;\n\nFor more information on figures, see here. Images generated through code is not covered here."
+    "text": "4 Images\nImages can be inserted using plain markdown or HTML directly. Plain markdown can be embellished with custom quarto adjustments to modify aspects of the image. Clicking the image opens the image in a lightbox. This is made possible using the lightbox extension.\n\n4.1 Using Markdown\nUsing regular markdown.\n![](assets/image.jpg)\n\n\n\n\n\nThe dimensions are based on image and/or fill up the entire available space. You can control the dimension as shown below.\n![This is a caption](assets/image.jpg){width=30%}  \n\n\n\nThis is a caption\n\n\nThis image above is now 30% of it’s original width.\n\n4.1.1 Figure layout\n::: {#fig-mylabel layout-ncol=2}\n![Caption for figure 1](assets/image.jpg){width=\"40%\"}\n\n![Caption for figure 2](assets/image.jpg){width=\"40%\"}\n\nThese figures are interesting.\n:::\n\n\n\n\n\n\nCaption for figure 1\n\n\n\n\n\nCaption for figure 2\n\n\n\nFigure 1: These figures are interesting.\n\n\nMore figure options and layouts are described here. Cross referencing described here.\n\n\n\n4.2 Using HTML\nThis image below is 30% size.\n&lt;img src=\"assets/image.jpg\" style=\"width:30%;\"/&gt;\n\nFor more information on figures, see here. Images generated through code is not covered here."
   },
   {
     "objectID": "reports/demo/index.html#math-expressions",
@@ -158,14 +158,14 @@
     "href": "index.html",
     "title": "",
     "section": "",
-    "text": "Report\nPresentation\n\nFor usage instructions and demo examples, see Contents\n\n\nUpdated: 29-12-2023 at 00:16:27."
+    "text": "Report\nPresentation\n\nFor usage instructions and demo examples, see Contents\n\n\nUpdated: 29-12-2023 at 12:56:25."
   },
   {
     "objectID": "index.html#abstrave",
     "href": "index.html#abstrave",
     "title": "",
     "section": "",
-    "text": "Report\nPresentation\n\nFor usage instructions and demo examples, see Contents\n\n\nUpdated: 29-12-2023 at 00:16:27."
+    "text": "Report\nPresentation\n\nFor usage instructions and demo examples, see Contents\n\n\nUpdated: 29-12-2023 at 12:56:25."
   },
   {
     "objectID": "home_schedule.html",
@@ -392,18 +392,25 @@
     "text": "Custom CSS styling\n\nYou can style text using any custom CSS\nThis is a block level element\n\n::: {style=\"color: red\"}\nThis paragraph is red.\n:::\n\nThis paragraph is red.\n\n\nThis is a span. ie; A word or one line.\n\n[This text is blue]{style=\"color: blue\"}\nThis text is blue"
   },
   {
-    "objectID": "slides/demo/index.html#call-outs",
-    "href": "slides/demo/index.html#call-outs",
+    "objectID": "slides/demo/index.html#callouts",
+    "href": "slides/demo/index.html#callouts",
     "title": "Quarto Presentation",
-    "section": "Call-Outs",
-    "text": "Call-Outs\n\n\n::: {.callout-note}\nThis is a call-out.\n:::\n\n::: {.callout-warning}\nThis is a call-out.\n:::\n\n::: {.callout-important}\nThis is a call-out.\n:::\n\n::: {.callout-tip}\nThis is a call-out.\n:::\n\n::: {.callout-caution}\nThis is a call-out.\n:::\n\n\n\n\n\n\n\nNote\n\n\nThis is a call-out.\n\n\n\n\n\n\n\n\n\nWarning\n\n\nThis is a call-out.\n\n\n\n\n\n\n\n\n\nImportant\n\n\nThis is a call-out.\n\n\n\n\n\n\n\n\n\nTip\n\n\nThis is a call-out.\n\n\n\n\n\n\n\n\n\nCaution\n\n\nThis is a call-out.\n\n\n\n\n\n\n\nCall-Out blocks are documented here"
+    "section": "Callouts",
+    "text": "Callouts\n\n\n::: {.callout-note}\nThis is a callout.\n:::\n\n::: {.callout-warning}\nThis is a callout.\n:::\n\n::: {.callout-important}\nThis is a callout.\n:::\n\n::: {.callout-tip}\nThis is a callout.\n:::\n\n::: {.callout-caution}\nThis is a callout.\n:::\n\n\n\n\n\n\n\nNote\n\n\nThis is a callout.\n\n\n\n\n\n\n\n\n\nWarning\n\n\nThis is a callout.\n\n\n\n\n\n\n\n\n\nImportant\n\n\nThis is a callout.\n\n\n\n\n\n\n\n\n\nTip\n\n\nThis is a callout.\n\n\n\n\n\n\n\n\n\nCaution\n\n\nThis is a callout.\n\n\n\n\n\n\n\nCallOut blocks are documented here"
   },
   {
-    "objectID": "slides/demo/index.html#call-outs-1",
-    "href": "slides/demo/index.html#call-outs-1",
+    "objectID": "slides/demo/index.html#callouts-1",
+    "href": "slides/demo/index.html#callouts-1",
     "title": "Quarto Presentation",
-    "section": "Call-Outs",
-    "text": "Call-Outs\nVariants of call-out\n\n\n::: {.callout-note icon=false}\nIcon is disabled\n:::\n\n::: {.callout-note appearance=\"simple\"}\nAppearance is simple\n:::\n\n::: {.callout-note appearance=\"minimal\"}\nAppearance is minimal\n:::\n\n::: {.callout-note appearance=\"simple\"}\n## Custom title\nSimple appearance and a custom title\n:::\n\n::: {.callout-note appearance=\"minimal\"}\n## Custom title\nMinimal appearance and a custom title\n:::\n\n\n\n\nNote\n\n\nIcon is disabled\n\n\n\n\n\n\n\n\n\nAppearance is simple\n\n\n\n\n\n\nAppearance is minimal\n\n\n\n\n\n\n\n\n\nCustom title\n\n\nSimple appearance and a custom title\n\n\n\n\n\n\nCustom title\n\n\nMinimal appearance and a custom title"
+    "section": "Callouts",
+    "text": "Callouts\nVariants of callout\n\n\n::: {.callout-note icon=false}\nIcon is disabled\n:::\n\n::: {.callout-note appearance=\"simple\"}\nAppearance is simple\n:::\n\n::: {.callout-note appearance=\"minimal\"}\nAppearance is minimal\n:::\n\n::: {.callout-note appearance=\"simple\"}\n## Custom title\nSimple appearance and a custom title\n:::\n\n::: {.callout-note appearance=\"minimal\"}\n## Custom title\nMinimal appearance and a custom title\n:::\n\n\n\n\nNote\n\n\nIcon is disabled\n\n\n\n\n\n\n\n\n\nAppearance is simple\n\n\n\n\n\n\nAppearance is minimal\n\n\n\n\n\n\n\n\n\nCustom title\n\n\nSimple appearance and a custom title\n\n\n\n\n\n\nCustom title\n\n\nMinimal appearance and a custom title"
+  },
+  {
+    "objectID": "slides/demo/index.html#callouts-2",
+    "href": "slides/demo/index.html#callouts-2",
+    "title": "Quarto Presentation",
+    "section": "Callouts",
+    "text": "Callouts\n::: {.callout-note}\n\nThis contains code\n\n## Callout with code\n\n```\nSys.Date()\n```\n\n:::\n\n\n\n\n\n\nCallout with code\n\n\nThis contains code\nSys.Date()"
   },
   {
     "objectID": "slides/demo/index.html#code-formatting",
@@ -459,7 +466,7 @@
     "href": "slides/demo/index.html#images-r",
     "title": "Quarto Presentation",
     "section": "Images • R",
-    "text": "Images • R\nUsing R\nR chunks in RMarkdown can be used to control image display size using the arguemnt out.width.\nThis image is displayed at a size of 200 pixels.\n```{r}\n#| out-width: \"200px\"\nknitr::include_graphics(\"assets/featured.jpg\")\n```"
+    "text": "Images • R\nUsing R\nR chunks in RMarkdown can be used to control image display size using the argument out.width.\nThis image is displayed at a size of 200 pixels.\n```{r}\n#| out-width: \"200px\"\nknitr::include_graphics(\"assets/featured.jpg\")\n```"
   },
   {
     "objectID": "slides/demo/index.html#math-expressions",
@@ -497,11 +504,18 @@
     "text": "Tables • kableExtra\nMore advanced table using kableExtra and formattable.\n\n iris[c(1:2,51:52,105:106),] %&gt;%\n  mutate(Sepal.Length=color_bar(\"lightsteelblue\")(Sepal.Length)) %&gt;%\n  mutate(Sepal.Width=color_tile(\"white\",\"orange\")(Sepal.Width)) %&gt;%\n  mutate(Species=cell_spec(Species,\"html\",color=\"white\",bold=T,\n    background=c(\"#8dd3c7\",\"#fb8072\",\"#bebada\")[factor(.$Species)])) %&gt;%\n  kable(\"html\",escape=F) %&gt;%\n  kable_styling(bootstrap_options=c(\"striped\",\"hover\",\"responsive\"),full_width=F) %&gt;%\n  column_spec(5,width=\"3cm\")\n\n\n\n\n\n\nSepal.Length\nSepal.Width\nPetal.Length\nPetal.Width\nSpecies\n\n\n\n\n1\n5.1\n3.5\n1.4\n0.2\nsetosa\n\n\n2\n4.9\n3.0\n1.4\n0.2\nsetosa\n\n\n51\n7.0\n3.2\n4.7\n1.4\nversicolor\n\n\n52\n6.4\n3.2\n4.5\n1.5\nversicolor\n\n\n105\n6.5\n3.0\n5.8\n2.2\nvirginica\n\n\n106\n7.6\n3.0\n6.6\n2.1\nvirginica"
   },
   {
-    "objectID": "slides/demo/index.html#tables-dt",
-    "href": "slides/demo/index.html#tables-dt",
+    "objectID": "slides/demo/index.html#tables-interactive-dt",
+    "href": "slides/demo/index.html#tables-interactive-dt",
     "title": "Quarto Presentation",
-    "section": "Tables • DT",
-    "text": "Tables • DT\nInteractive table using R package DT.\n\nlibrary(DT)\nDT::datatable(iris[1:20,],options=list(pageLength=7))"
+    "section": "Tables • Interactive • DT",
+    "text": "Tables • Interactive • DT\nInteractive table using R package DT.\n\nlibrary(DT)\nDT::datatable(iris[1:20,],options=list(pageLength=7))"
+  },
+  {
+    "objectID": "slides/demo/index.html#tables-interactive-reactable",
+    "href": "slides/demo/index.html#tables-interactive-reactable",
+    "title": "Quarto Presentation",
+    "section": "Tables • Interactive • reactable",
+    "text": "Tables • Interactive • reactable\nInteractive tables with reactable.\n\nlibrary(reactable)\n\nreactable(iris[sample(1:150,6),],\n  striped = TRUE, highlight = TRUE, filterable = TRUE\n)"
   },
   {
     "objectID": "slides/demo/index.html#static-plots-base-plot",
@@ -613,7 +627,7 @@
     "href": "slides/demo/index.html#general-tips",
     "title": "Quarto Presentation",
     "section": "General tips",
-    "text": "General tips\n\nReplace assets/cover.jpg to change cover slide picture\nReplace assets/end.jpg to change end slide picture\nAdd custom css under YAML css: \"styles.css\"\nIf content overflows the slide in vertical direction, add class .scrollable\n\n\n\n\n                                              sysname \n                                              \"Linux\" \n                                              release \n                                   \"6.2.0-1018-azure\" \n                                              version \n\"#18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023\" \n                                             nodename \n                                      \"fv-az1022-218\" \n                                              machine \n                                             \"x86_64\" \n                                                login \n                                            \"unknown\" \n                                                 user \n                                             \"runner\" \n                                       effective_user \n                                             \"runner\" \n\n\n\n\nExport HTML to PDF using PDF export mode by pressing e\nFor complete Quarto revealjs documentation, click here"
+    "text": "General tips\n\nReplace assets/cover.jpg to change cover slide picture\nReplace assets/end.jpg to change end slide picture\nAdd custom css under YAML css: \"styles.css\"\nIf content overflows the slide in vertical direction, add class .scrollable\n\n\n\n\n                                              sysname \n                                              \"Linux\" \n                                              release \n                                   \"6.2.0-1018-azure\" \n                                              version \n\"#18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023\" \n                                             nodename \n                                      \"fv-az1196-639\" \n                                              machine \n                                             \"x86_64\" \n                                                login \n                                            \"unknown\" \n                                                 user \n                                             \"runner\" \n                                       effective_user \n                                             \"runner\" \n\n\n\n\nExport HTML to PDF using PDF export mode by pressing e\nFor complete Quarto revealjs documentation, click here"
   },
   {
     "objectID": "slides/demo/index.html#section",
