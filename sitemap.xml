@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://royfrancis.github.io/abstrave/home_contents.html</loc>
-    <lastmod>2024-01-15T16:41:02.573Z</lastmod>
-  </url>
-  <url>
-    <loc>https://royfrancis.github.io/abstrave/home_syllabus.html</loc>
-    <lastmod>2024-01-15T16:41:01.969Z</lastmod>
-  </url>
-  <url>
-    <loc>https://royfrancis.github.io/abstrave/slides/index.html</loc>
-    <lastmod>2024-01-15T16:41:01.333Z</lastmod>
-  </url>
-  <url>
-    <loc>https://royfrancis.github.io/abstrave/reports/more/index.html</loc>
-    <lastmod>2024-01-15T16:40:55.693Z</lastmod>
-  </url>
-  <url>
-    <loc>https://royfrancis.github.io/abstrave/reports/index.html</loc>
-    <lastmod>2024-01-15T16:40:54.881Z</lastmod>
+    <loc>https://royfrancis.github.io/abstrave/home_schedule.html</loc>
+    <lastmod>2024-02-03T21:59:08.601Z</lastmod>
   </url>
   <url>
     <loc>https://royfrancis.github.io/abstrave/reports/demo/index.html</loc>
-    <lastmod>2024-01-15T16:40:53.081Z</lastmod>
-  </url>
-  <url>
-    <loc>https://royfrancis.github.io/abstrave/index.html</loc>
-    <lastmod>2024-01-15T16:40:45.957Z</lastmod>
-  </url>
-  <url>
-    <loc>https://royfrancis.github.io/abstrave/home_schedule.html</loc>
-    <lastmod>2024-01-15T16:40:46.541Z</lastmod>
-  </url>
-  <url>
-    <loc>https://royfrancis.github.io/abstrave/reports/demo-with-r/index.html</loc>
-    <lastmod>2024-01-15T16:40:52.365Z</lastmod>
+    <lastmod>2024-02-03T21:59:08.605Z</lastmod>
   </url>
   <url>
     <loc>https://royfrancis.github.io/abstrave/reports/usage/index.html</loc>
-    <lastmod>2024-01-15T16:40:54.417Z</lastmod>
+    <lastmod>2024-02-03T21:59:08.617Z</lastmod>
   </url>
   <url>
-    <loc>https://royfrancis.github.io/abstrave/reports/sample/index.html</loc>
-    <lastmod>2024-01-15T16:40:55.145Z</lastmod>
-  </url>
-  <url>
-    <loc>https://royfrancis.github.io/abstrave/slides/demo/index.html</loc>
-    <lastmod>2024-01-15T16:41:00.677Z</lastmod>
-  </url>
-  <url>
-    <loc>https://royfrancis.github.io/abstrave/slides/sample/index.html</loc>
-    <lastmod>2024-01-15T16:41:01.633Z</lastmod>
+    <loc>https://royfrancis.github.io/abstrave/reports/more/index.html</loc>
+    <lastmod>2024-02-03T21:59:08.617Z</lastmod>
   </url>
   <url>
     <loc>https://royfrancis.github.io/abstrave/home_precourse.html</loc>
-    <lastmod>2024-01-15T16:41:02.281Z</lastmod>
+    <lastmod>2024-02-03T21:59:08.601Z</lastmod>
+  </url>
+  <url>
+    <loc>https://royfrancis.github.io/abstrave/slides/sample/index.html</loc>
+    <lastmod>2024-02-03T21:59:08.621Z</lastmod>
+  </url>
+  <url>
+    <loc>https://royfrancis.github.io/abstrave/slides/index.html</loc>
+    <lastmod>2024-02-03T21:59:08.617Z</lastmod>
+  </url>
+  <url>
+    <loc>https://royfrancis.github.io/abstrave/index.html</loc>
+    <lastmod>2024-02-03T21:59:08.601Z</lastmod>
+  </url>
+  <url>
+    <loc>https://royfrancis.github.io/abstrave/home_syllabus.html</loc>
+    <lastmod>2024-02-03T21:59:08.601Z</lastmod>
+  </url>
+  <url>
+    <loc>https://royfrancis.github.io/abstrave/slides/demo/index.html</loc>
+    <lastmod>2024-02-03T21:59:08.617Z</lastmod>
+  </url>
+  <url>
+    <loc>https://royfrancis.github.io/abstrave/home_contents.html</loc>
+    <lastmod>2024-02-03T21:59:08.601Z</lastmod>
+  </url>
+  <url>
+    <loc>https://royfrancis.github.io/abstrave/reports/index.html</loc>
+    <lastmod>2024-02-03T21:59:08.605Z</lastmod>
+  </url>
+  <url>
+    <loc>https://royfrancis.github.io/abstrave/reports/demo-with-r/index.html</loc>
+    <lastmod>2024-02-03T21:59:08.605Z</lastmod>
+  </url>
+  <url>
+    <loc>https://royfrancis.github.io/abstrave/reports/sample/index.html</loc>
+    <lastmod>2024-02-03T21:59:08.617Z</lastmod>
   </url>
 </urlset>
