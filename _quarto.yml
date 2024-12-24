@@ -29,7 +29,7 @@ website:
         aria-label: "About"
   page-footer:
     border: false
-    left: "{{< meta current_year >}} Roy Francis | [GPL-3 License](https://choosealicense.com/licenses/gpl-3.0/)"
+    left: "{{< meta current_year >}} Zichao Wei | [GPL-3 License](https://choosealicense.com/licenses/gpl-3.0/)"
     right: "Published with [Quarto](https://quarto.org/) v{{< meta quarto_version >}}"
   site-url: "https://royfrancis.github.io/abstrave/"
   open-graph: true
@@ -58,7 +58,7 @@ format:
     subtitle: "Abstrave quarto theme"
     callout-icon: true
     date:  last-modified
-    date-format: "DD-MMM-YYYY"
+    date-format: "YYYY-MM-DD"
     image: "assets/images/featured.webp"
     lightbox: auto
   revealjs:
@@ -79,7 +79,7 @@ format:
     slide-number: true
     progress: true
     date:  last-modified
-    date-format: "DD-MMM-YYYY"
+    date-format: "YYYY-MM-DD"
     fig-align: left
     chalkboard: true
     callout-icon: true
@@ -95,7 +95,7 @@ format:
     header-logo-left-url: https://royfrancis.github.io/abstrave/home_contents.html
     header-logo-right: /assets/logos/abstrave.webp
     header-logo-right-height: 25px
-    header-logo-right-url: https://royfrancis.github.io/abstrave/home_contents.html
+    #header-logo-right-url: https://royfrancis.github.io/abstrave/home_contents.html
     template-partials:
       - "/assets/title-slide.html"
 
@@ -111,4 +111,3 @@ filters:
   - assets/fold-results.lua
   - reveal-logo
   - fontawesome
-
