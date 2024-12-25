@@ -102,14 +102,14 @@
     "href": "index.html",
     "title": "",
     "section": "",
-    "text": "Report\nPresentation\n\nFor usage instructions and demo examples, see Contents\n\n\nUpdated: 24-12-2024 at 23:25:09 ."
+    "text": "Report\nPresentation\n\nFor usage instructions and demo examples, see Contents\n\n\nUpdated: 25-12-2024 at 01:12:57 ."
   },
   {
     "objectID": "index.html#abstrave-course-template",
     "href": "index.html#abstrave-course-template",
     "title": "",
     "section": "",
-    "text": "Report\nPresentation\n\nFor usage instructions and demo examples, see Contents\n\n\nUpdated: 24-12-2024 at 23:25:09 ."
+    "text": "Report\nPresentation\n\nFor usage instructions and demo examples, see Contents\n\n\nUpdated: 25-12-2024 at 01:12:57 ."
   },
   {
     "objectID": "home_about.html",
@@ -228,7 +228,7 @@
     "href": "reports/demo/index.html#shortcodes",
     "title": "Quarto Basics",
     "section": "11 Shortcodes",
-    "text": "11 Shortcodes\nShortcodes are sort of like quarto functions.\nTwo important shortcodes are meta and var. meta allows to read metadata from the yaml block in the current page or from _quarto.yml. Here are a few examples:\n{{&lt; meta title &gt;}} Quarto Basics\n![]({{&lt; meta image &gt;}}){width=\"300px\"}\n\nSimilarly, var allows to read variables from _variables.yml if it has been defined. The include shortcode allows to add a child qmd document into a specific position in a qmd file. The kbd shortcode allows keyboard notations:\nPress {{&lt; kbd Shift-Ctrl-P &gt;}} Press Shift-Ctrl-PShift-Ctrl-P\nThe video shortcode allows to embed a video.\n{{&lt; video https://www.youtube.com/watch?v=_f3latmOhew &gt;}}\n\nSome of the custom shortcodes added with this template are:\n{{&lt; meta quarto_version &gt;}} 1.6.39\n{{&lt; meta current_date &gt;}} 24-12-2024 {{&lt; meta current year &gt;}} 2024 {{&lt; meta current time &gt;}} 23:25:11\nShortcodes are documented here."
+    "text": "11 Shortcodes\nShortcodes are sort of like quarto functions.\nTwo important shortcodes are meta and var. meta allows to read metadata from the yaml block in the current page or from _quarto.yml. Here are a few examples:\n{{&lt; meta title &gt;}} Quarto Basics\n![]({{&lt; meta image &gt;}}){width=\"300px\"}\n\nSimilarly, var allows to read variables from _variables.yml if it has been defined. The include shortcode allows to add a child qmd document into a specific position in a qmd file. The kbd shortcode allows keyboard notations:\nPress {{&lt; kbd Shift-Ctrl-P &gt;}} Press Shift-Ctrl-PShift-Ctrl-P\nThe video shortcode allows to embed a video.\n{{&lt; video https://www.youtube.com/watch?v=_f3latmOhew &gt;}}\n\nSome of the custom shortcodes added with this template are:\n{{&lt; meta quarto_version &gt;}} 1.6.39\n{{&lt; meta current_date &gt;}} 25-12-2024 {{&lt; meta current year &gt;}} 2024 {{&lt; meta current time &gt;}} 01:12:59\nShortcodes are documented here."
   },
   {
     "objectID": "reports/demo/index.html#general-tips",
